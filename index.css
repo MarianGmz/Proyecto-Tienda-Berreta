@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
+
+header{
+    
+    /* background-image: url('assets/nube-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    
+}
+header::after{
+    content:'';
+    display: inline-block;
+    background-image:url('assets/nube-bg.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 60%;
+    z-index: 0;
+    border-radius: 0 0 5% 5%;
+}
+header{
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+   
+}
+.nav-bar{
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
+   
+}
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+    
+    
+    
+}
+.nav-bar ul li{
+    overflow: hidden;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #514644;
+    
+    font-size: 1.3rem;
+    font-family: 'Anton';
+   
+}
+
+
+.nav-bar ul li::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    right: 100%;
+    background-color: #000;
+}
+
+.nav-bar ul li:hover::after{
+    right: 0%;
+    transition: right 1s;
+   
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

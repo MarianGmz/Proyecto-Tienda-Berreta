@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
+header{
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+header::after{
+    content:'';
+    display: inline-block;
+    background-image:url('assets/nube-bg.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: border-box;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 60%;
+    z-index: 0;
+    border-radius: 0 0 10px 10px;
+   
+}
+.nav-bar{
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
+   
+}
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    
+    
+    
+}
+.nav-bar ul li{
+    overflow: hidden;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #000000;
+    
+    font-size: 1.3rem;
+    font-family: 'Anton';
+   
+}
+
+
+.nav-bar ul li::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    right: 100%;
+    background-color: #000;
+}
+
+.nav-bar ul li:hover::after{
+    right: 0%;
+    transition: right 1s;
+   
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mapa{
+    width: 100%;
+    display: flex;
+    
+}
+.mapa iframe{
+    width: 80%;
+    margin: auto;
+    border-radius: 20px ;
+}
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+}
+.info-local{
+    width: 50%;
+}
+
+.redes-info img{
+    width:40px;
+    margin: 20px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+form{
+    width: 50%;
+    height: 700px;
+}
+form > h2{
+    text-align: start;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+input,textarea{
+    display: block;
+    width: 100%;
+    
+    margin: 25px;
+    border: 0;
+    border-bottom: 2px solid #e3e7e8;
+    border-radius: 0;
+    padding: 3px;
+    transition: 0.4s;
+    box-shadow: none;
+    background-clip: padding-box;
+    font-size: 20px;
+
+}
+input{
+    height: 30px;
+    
+}
+#nombres,#email{
+    margin: 0;
+    width: 40%;
+    display: inline;
+}
+#nombres{
+    margin: 0 40px 0 23px;
+}
+
+.checkbox{
+    width: 17px;
+    display: inline-block;
+    margin: 0 ;
+    height: 15px;
+}
+button{
+    display: block;
+    margin: 35px auto;
+    width: 70%;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+    
+}
