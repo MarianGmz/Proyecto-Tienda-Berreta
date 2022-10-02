@@ -1,41 +1,67 @@
-header {
-    width: 100%;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
+
+html,body,main{
+    height: 100vh;
 }
 
-.nav-bar {
+header{
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+header::after{
+    content:'';
+    display: inline-block;
+    background-image:url('../assets/nube-bg.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 60%;
+    z-index: 0;
+    border-radius: 0 0 10px 10px;
+   
+}
+.nav-bar{
     margin: 0;
     height: 100px;
     display: flex;
     align-items: center;
     width: 100%;
-    position: fixed;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
+   
 }
-
-.nav-bar ul {
+.nav-bar ul{
     width: 100%;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-
-
+    z-index: 2;
+    
+    
+    
 }
-
-.nav-bar ul li {
+.nav-bar ul li{
     overflow: hidden;
 }
-
-.nav-bar ul li a {
+.nav-bar ul li a{
     text-decoration: none;
-    color: #000;
-    font-weight: bolder;
+    color: #000000;
+    
     font-size: 1.3rem;
-
+    font-family: 'Anton';
+   
 }
 
 
-.nav-bar ul li::after {
+.nav-bar ul li::after{
     content: '';
     display: block;
     position: relative;
@@ -45,16 +71,73 @@ header {
     background-color: #000;
 }
 
-.nav-bar ul li:hover::after {
+.nav-bar ul li:hover::after{
     right: 0%;
-    transition: right 1s;
+    transition: right .5s;
+   
+}
+
+
+.texto-p{
+    width: 100%;
+    background: #fff;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.texto-p h1 {
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    font-size: 3.8rem;
+    letter-spacing: 10px;
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px   black;
+    display: contents;
+
+    
+    
+    
+   
+}
+.texto-p h1::after{
+    content: 'PIEZAS BERRETA';
+    background-image: url('../assets/texto.jpeg');
+    background-size: contain;
+    background-position-y:center ;
+    -webkit-background-clip: text;
+    text-shadow: none;
+    position: absolute;
+    animation: texto 6s infinite ease;
+    
+    
+  
 
 }
 
-h1 {
-    text-align: center;
-    font-size: 3.6rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 50px;
-    margin-bottom: 100px;
+@keyframes texto {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    
+   
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
 }

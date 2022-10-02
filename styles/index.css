@@ -1,33 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
 
 header{
-    
-    /* background-image: url('assets/nube-bg.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-    
-}
-header::after{
-    content:'';
-    display: inline-block;
-    background-image:url('assets/nube-bg.jpeg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 60%;
-    z-index: 0;
-    border-radius: 0 0 5% 5%;
-}
-header{
     width: 100%;
     margin: 0;
     position: sticky;
     top: 0px;
+    z-index: 2;
+}
+header::after{
+    content:'';
+    display: inline-block;
+    background-image:url('../assets/nube-bg.jpeg') ;
+    background-position-y:end ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 90%;
+    z-index: 0;
+    border-radius: 0 0 10px 10px;
    
 }
 .nav-bar{
@@ -57,7 +50,7 @@ header{
 }
 .nav-bar ul li a{
     text-decoration: none;
-    color: #514644;
+    color: #000000;
     
     font-size: 1.3rem;
     font-family: 'Anton';
