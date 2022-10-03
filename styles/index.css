@@ -77,8 +77,70 @@ header::after{
 
 
 
-h1{
+.texto-p{
+    width: 100%;
+    background-size: contain;
+    background-repeat: repeat;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.texto-p h1 {
+    width: 100%;
+    color: transparent;
     text-align: center;
-    font-size: 3.6rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    margin: 100px 0 0 0;
+    letter-spacing: 17px;
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px   black;
+    display: contents;
+
+    
+    
+    
+   
+}
+.texto-p h1::after{
+    content: 'TIENDA BERRETA';
+    background-image: url("../assets/cuadritos-n.jpeg");
+    background-size: contain;
+    background-position-y:center ;
+    -webkit-background-clip: text;
+    text-shadow: none;
+    position: absolute;
+    animation: texto 6s infinite ease;
+    
+    
+  
+
+}
+
+@keyframes texto {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    
+   
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.inicio{
+    height: 100vh;
+    width: 100%;
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("../assets/WhatsApp\ Image\ 2022-10-02\ at\ 7.25.04\ PM.jpeg");
 }
