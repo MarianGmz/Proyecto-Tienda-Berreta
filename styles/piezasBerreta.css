@@ -174,11 +174,20 @@ header{
         align-items: center;
         
     }
-    .nav-bar ul li{
+    .nav-items{
         width: 100%;
         text-align: center;
         padding: 20px 0 20px 0;
-        border: solid 1px grey;
+        border: solid 1px transparent;
+    }
+    .contacto-item{
+        background-color: transparent;
+        
+    }
+    .contacto-item a{
+        color: #000;
+        font-size: 1.3rem;
+        font-family: 'Anton';
     }
    
 }

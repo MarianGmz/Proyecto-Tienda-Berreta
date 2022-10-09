@@ -63,6 +63,7 @@ header{
 .contacto-item a{
     text-decoration: none;
     color: #fff;
+    
 }
 
 
@@ -273,6 +274,9 @@ input::placeholder,textarea::placeholder{
     box-shadow: 2px 2px 2px grey;
 }
 
+
+
+/* Responsive */
 @media screen and (max-width:768px){
     header{
         height: auto;
@@ -287,12 +291,21 @@ input::placeholder,textarea::placeholder{
         align-items: center;
         
     }
-    .nav-bar ul li{
+    .nav-items{
         
         width: 100%;
         text-align: center;
         padding: 20px 0 20px 0;
         border: transparent 1px grey;
+    }
+    .contacto-item{
+        background-color: transparent;
+        
+    }
+    .contacto-item a{
+        color: #000;
+        font-size: 1.3rem;
+        font-family: 'Anton';
     }
    
     .logo-item img{

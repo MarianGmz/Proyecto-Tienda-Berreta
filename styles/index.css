@@ -3,6 +3,7 @@
 
 body{
     background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
 }
 header{
     width: 100%;
@@ -162,7 +163,7 @@ header{
 
 .titulo-p{
     position: relative;
-    top: -100px;
+   
     left: -20px;
  
 
@@ -196,11 +197,20 @@ header{
         align-items: center;
         
     }
-    .nav-bar ul li{
+    .nav-items{
         width: 100%;
         text-align: center;
         padding: 20px 0 20px 0;
         
+    }
+    .contacto-item{
+        background-color: transparent;
+        
+    }
+    .contacto-item a{
+        color: #000;
+        font-size: 1.3rem;
+        font-family: 'Anton';
     }
     
 }
