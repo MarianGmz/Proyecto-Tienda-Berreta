@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
 
+
+body{
+    background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
 header{
     width: 100%;
     margin: 0;
@@ -7,22 +12,7 @@ header{
     top: 0px;
     z-index: 2;
 }
-header::after{
-    content:'';
-    display: inline-block;
-    background-image:url('../assets/nube-bg.jpeg') ;
-    background-position-y:end ;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 90%;
-    z-index: 0;
-    border-radius: 0 0 10px 10px;
-   
-}
+
 .nav-bar{
     margin: 0;
     height: 100px;
@@ -45,10 +35,10 @@ header::after{
     
     
 }
-.nav-bar ul li{
+.nav-items{
     overflow: hidden;
 }
-.nav-bar ul li a{
+.nav-items a{
     text-decoration: none;
     color: #000000;
     
@@ -56,28 +46,53 @@ header::after{
     font-family: 'Anton';
    
 }
+.logo-item{
+    width: 200px;
+    height: 130px;
+}
+.logo-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacto-item{
+    background-color: #02242c;
+    padding: 15px;
+    border-radius:10px ;
+    
+}
+.contacto-item a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
-.nav-bar ul li::after{
+.nav-items::after{
     content: '';
     display: block;
     position: relative;
     width: 100%;
     height: 2px;
-    right: 100%;
+    right: 120%;
     background-color: #000;
 }
 
-.nav-bar ul li:hover::after{
+.nav-items:hover::after{
     right: 0%;
-    transition: right 1s;
+    transition: right .5s;
    
+}
+
+.contacto-item:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px #02242c;
+    transition: all .3s;
 }
 
 
 
 
-.texto-p{
+/* .texto-p{
     width: 100%;
     background-size: contain;
     background-repeat: repeat;
@@ -135,12 +150,67 @@ header::after{
         transform: scale(1);
     }
     
-}
+} */
 
-.inicio{
+/* .inicio{
     height: 100vh;
     width: 100%;
     background-repeat: round;
     background-size: cover;
     background-image: url("../assets/WhatsApp\ Image\ 2022-10-02\ at\ 7.25.04\ PM.jpeg");
+} */
+
+
+.titulo-p{
+    position: relative;
+   
+    left: -20px;
+ 
+
+    
+    opacity: 1;
+}
+.titulo-p img{
+    width: 100%;
+}
+
+.container-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-sobre img{
+    width: 100%;
+}
+/* Responsive */
+
+@media screen and (max-width:768px){
+    header{
+        height: auto;
+        position: relative;
+    }
+    .nav-bar{
+        height: auto;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav-items{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        
+    }
+    .contacto-item{
+        background-color: transparent;
+        
+    }
+    .contacto-item a{
+        color: #000;
+        font-size: 1.3rem;
+        font-family: 'Anton';
+    }
+    
 }
