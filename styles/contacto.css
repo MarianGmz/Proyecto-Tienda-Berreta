@@ -1,73 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
-body{
+
+body {
     width: 100%;
     background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
     background-size: cover;
 }
 
-header{
+header {
     width: 100%;
     margin: 0;
     position: sticky;
     top: 0px;
 }
 
-.nav-bar{
+.nav-bar {
     margin: 0;
     height: 100px;
     display: flex;
     align-items: center;
     width: 100%;
-    
-    background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
-   
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(360deg, rgba(2, 0, 36, 0) 0%, transparent 30%, #fff 100%);
+
 }
-.nav-bar ul{
+
+.nav-bar ul {
     width: 100%;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     z-index: 2;
-    
-    
-    
+
+
+
 }
-.nav-items{
+
+.nav-items {
     overflow: hidden;
 }
-.nav-items a{
+
+.nav-items a {
     text-decoration: none;
     color: #000000;
-    
+
     font-size: 1.3rem;
     font-family: 'Anton';
-   
+
 }
-.logo-item{
+
+.logo-item {
     width: 200px;
     height: 130px;
 }
-.logo-item img{
+
+.logo-item img {
     width: 100%;
     height: 100%;
 }
 
-.contacto-item{
+.contacto-item {
     background-color: #02242c;
     padding: 15px;
-    border-radius:10px ;
-    
+    border-radius: 10px;
+
 }
-.contacto-item a{
+
+.contacto-item a {
     text-decoration: none;
     color: #fff;
-    
+
 }
 
 
-.nav-items::after{
+.nav-items::after {
     content: '';
     display: block;
     position: relative;
@@ -77,13 +84,13 @@ header{
     background-color: #000;
 }
 
-.nav-items:hover::after{
+.nav-items:hover::after {
     right: 0%;
     transition: right .5s;
-   
+
 }
 
-.contacto-item:hover{
+.contacto-item:hover {
     transform: scale(1.2);
     box-shadow: 2px 2px 5px #02242c;
     transition: all .3s;
@@ -92,14 +99,14 @@ header{
 
 
 
-.texto-p{
+.texto-p {
     width: 100%;
     background: transparent;
     min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -112,116 +119,128 @@ header{
     font-family: 'Anton';
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 5px 5px 3px   black;
+    text-shadow: 5px 5px 3px black;
     display: contents;
 
-    
-    
-    
-   
+
+
+
+
 }
-.texto-p h1::after{
+
+.texto-p h1::after {
     content: 'CONTACTO';
-    background-image: url('../assets/texto.jpeg');
+    background-image: url('../assets/cuadritos_azules.jpg');
     background-size: contain;
-    background-position-y:center ;
+    background-position-y: center;
     -webkit-background-clip: text;
     text-shadow: none;
     position: absolute;
     animation: texto 6s infinite ease;
-    
-    
-  
+    font-family: "Nosifer Caps";
+
+
+
 
 }
 
 @keyframes texto {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.02);
     }
-    
-   
-    100%{
+
+
+    100% {
         transform: scale(1);
     }
-    
+
 }
-.mapa{
+
+.mapa {
     width: 100%;
     display: flex;
-    
+
 }
-.mapa iframe{
+
+.mapa iframe {
     width: 80%;
     margin: auto;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
-.contenedor-info{
+
+.contenedor-info {
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
-.info-local{
+
+.info-local {
     width: 50%;
     text-align: center;
 }
-.info-local h2{
+
+.info-local h2 {
     font-size: 2rem;
     font-weight: bolder;
     margin: 0 0 10px 0;
 }
-.info-contacto h3{
+
+.info-contacto h3 {
     font-size: 1.5rem;
     text-shadow: 1px 1px 3px rgb(120, 106, 106);
     margin-bottom: 15px;
 }
-.info-contacto p{
+
+.info-contacto p {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
-.whatsapp{
+
+.whatsapp {
     text-decoration: none;
     font-size: 1.3rem;
-    color: rgb(89, 137, 17);
-}
-.whatsapp:active{
-    color: green;
-}
-.whatsapp:visited{
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: rgb(89, 137, 17);
+    color: black;
 }
 
-.redes-info img{
-    width:40px;
+.whatsapp:hover {
+    color: green;
+
+}
+
+
+.redes-info img {
+    width: 40px;
     margin: 20px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     justify-content: center;
     width: 100%;
-    
+
 }
-form{
+
+form {
     width: 50%;
     height: 700px;
 }
-form > h2{
+
+form>h2 {
     text-align: start;
     font-weight: 500;
     font-size: 2.5rem;
     margin: 0 0 30px 0;
 }
 
-input,textarea{
+input,
+textarea {
     display: block;
     width: 100%;
-    
+
     margin: 25px;
     border: 0;
     border-bottom: 1px solid #65cde7;
@@ -233,30 +252,36 @@ input,textarea{
     font-size: 20px;
 
 }
-input{
+
+input {
     height: 30px;
-    
+
 }
 
-input::placeholder,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     color: #02242c;
 }
-#nombres,#email{
+
+#nombres,
+#email {
     margin: 0;
     width: 40%;
     display: inline;
 }
-#nombres{
+
+#nombres {
     margin: 0 40px 0 23px;
 }
 
-.checkbox{
+.checkbox {
     width: 17px;
     display: inline-block;
-    margin: 0 ;
+    margin: 0;
     height: 15px;
 }
-.enviar-form{
+
+.enviar-form {
     display: block;
     margin: 35px auto;
     width: 70%;
@@ -265,11 +290,12 @@ input::placeholder,textarea::placeholder{
     background-color: #000;
     font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 30px 0 ;
-    
-    
+    border-radius: 30px 0;
+
+
 }
-.enviar-form:hover{
+
+.enviar-form:hover {
     background-color: #12425c;
     box-shadow: 2px 2px 2px grey;
 }
@@ -277,42 +303,49 @@ input::placeholder,textarea::placeholder{
 
 
 /* Responsive */
-@media screen and (max-width:768px){
-    header{
+@media screen and (max-width:768px) {
+    header {
         height: auto;
         position: relative;
     }
-    .nav-bar{
+
+    .nav-bar {
         height: auto;
-        
+
     }
-    .nav-bar ul{
+
+    .nav-bar ul {
         flex-direction: column;
         align-items: center;
-        
+
     }
-    .nav-items{
-        
+
+    .nav-items {
+
         width: 100%;
         text-align: center;
         padding: 20px 0 20px 0;
         border: transparent 1px grey;
     }
-    .contacto-item{
+
+    .contacto-item {
         background-color: transparent;
-        
+
     }
-    .contacto-item a{
+
+    .contacto-item a {
         color: #000;
         font-size: 1.3rem;
         font-family: 'Anton';
     }
-   
-    .logo-item img{
-        
+
+    .logo-item img {
+
         width: 200px;
     }
-    #nombres,#email{
+
+    #nombres,
+    #email {
         margin: 25px;
         width: 100%;
         display: block;

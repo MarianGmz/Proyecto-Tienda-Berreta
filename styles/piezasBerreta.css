@@ -122,17 +122,22 @@ header{
 }
 .texto-p h1::after{
     content: 'PIEZAS BERRETA';
-    background-image: url('../assets/texto.jpeg');
+    background-image: url('../assets/cuadritos_azules.jpg');
     background-size: contain;
     background-position-y:center ;
     -webkit-background-clip: text;
     text-shadow: none;
     position: absolute;
     animation: texto 6s infinite ease;
-    
+    font-family: "Nosifer Caps";
     
   
 
+}
+
+h2 {
+    font-weight: bold;
+    text-align: justify;
 }
 
 @keyframes texto {

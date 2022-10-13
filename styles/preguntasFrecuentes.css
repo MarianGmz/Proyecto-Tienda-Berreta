@@ -114,6 +114,7 @@ header{
     font-weight: bold;
     text-shadow: 5px 5px 3px   black;
     display: contents;
+    font-family: "Nosifer Caps";
 
     
     
@@ -122,7 +123,7 @@ header{
 }
 .texto-p h1::after{
     content: 'PREGUNTAS FRECUENTES';
-    background-image: url('../assets/texto.jpeg');
+    background-image: url('../assets/cuadritos_azules.jpg');
     background-size: contain;
     background-position-y:center ;
     -webkit-background-clip: text;
