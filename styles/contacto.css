@@ -18,11 +18,13 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
+    transform: translateX(0);
     
     background: rgb(2,0,36);
     background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
    
 }
+
 .nav-bar ul{
     width: 100%;
     display: flex;
@@ -88,6 +90,9 @@ header{
     box-shadow: 2px 2px 5px #02242c;
     transition: all .3s;
 }
+.hamburger-icon,.close-icon{
+    display: none;
+}
 
 
 
@@ -109,11 +114,12 @@ header{
     text-align: center;
     font-size: 3.8rem;
     letter-spacing: 10px;
-    font-family: 'Anton';
+    font-family: "Nosifer Caps";
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 5px 5px 3px   black;
     display: contents;
+    /* font-family: "Creepster Caps" */
 
     
     
@@ -122,7 +128,7 @@ header{
 }
 .texto-p h1::after{
     content: 'CONTACTO';
-    background-image: url('../assets/texto.jpeg');
+    background-image: url('../assets/cuadritos_azules.jpg');
     background-size: contain;
     background-position-y:center ;
     -webkit-background-clip: text;
@@ -187,13 +193,8 @@ header{
     font-size: 1.3rem;
     color: rgb(89, 137, 17);
 }
-.whatsapp:active{
-    color: green;
-}
-.whatsapp:visited{
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: rgb(89, 137, 17);
+.whatsapp:hover{
+    color: #65cde7;
 }
 
 .redes-info img{
@@ -205,11 +206,17 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
+  
     
 }
 form{
     width: 50%;
     height: 700px;
+    background-color: #00000036;
+
+  
+    padding: 30px;
+    border-radius: 10px ;
 }
 form > h2{
     text-align: start;
@@ -223,19 +230,24 @@ input,textarea{
     width: 100%;
     
     margin: 25px;
-    border: 0;
-    border-bottom: 1px solid #65cde7;
-    border-radius: 0;
+    outline: green;
+    border-bottom: 2px solid #0e0e0e;
+    border-radius: 7px;
     padding: 3px;
     transition: 0.4s;
-    box-shadow: none;
-    background-clip: padding-box;
+   
+    
+    background-color:#0707075b;
+    
     font-size: 20px;
 
 }
 input{
     height: 30px;
     
+}
+textarea, .asunto{
+    width: 85%;
 }
 
 input::placeholder,textarea::placeholder{
@@ -255,6 +267,39 @@ input::placeholder,textarea::placeholder{
     display: inline-block;
     margin: 0 ;
     height: 15px;
+}
+.warnings{
+    width: 250px;
+    text-align: center;
+    margin: auto ;
+ 
+    
+    color: #ff0000;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    animation: warning 1s infinite ease;
+}
+
+
+
+
+    
+    
+  
+
+@keyframes warning {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    
+   
+    100%{
+        transform: scale(1);
+    }
+    
 }
 .enviar-form{
     display: block;
@@ -276,45 +321,34 @@ input::placeholder,textarea::placeholder{
 
 
 
+
+
 /* Responsive */
 @media screen and (max-width:768px){
-    header{
-        height: auto;
-        position: relative;
-    }
-    .nav-bar{
-        height: auto;
-        
-    }
-    .nav-bar ul{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .nav-items{
-        
-        width: 100%;
-        text-align: center;
-        padding: 20px 0 20px 0;
-        border: transparent 1px grey;
-    }
-    .contacto-item{
-        background-color: transparent;
-        
-    }
-    .contacto-item a{
-        color: #000;
-        font-size: 1.3rem;
-        font-family: 'Anton';
+   
+    .texto-p h1{
+        font-size: 2.1rem;
     }
    
-    .logo-item img{
-        
-        width: 200px;
+    
+    .formulario{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    form{
+        width: 80%;
+        margin: 0 10px 0 10px;
     }
     #nombres,#email{
         margin: 25px;
-        width: 100%;
+        width: 85%;
         display: block;
     }
+
+    .enviar-form{
+        font-size: .6rem;
+        width: 150px;
+        height: 50px;
+    }
+   
 }

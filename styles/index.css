@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
-
-
 body{
+    width: 100%;
     background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
     background-size: cover;
 }
+
 header{
     width: 100%;
     margin: 0;
     position: sticky;
     top: 0px;
-    z-index: 2;
 }
 
 .nav-bar{
@@ -19,18 +18,20 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    z-index: 2;
+    transform: translateX(0);
+    
     background: rgb(2,0,36);
     background: linear-gradient(360deg, rgba(2,0,36,0) 0%, transparent 30%, #fff 100%);
    
 }
+
 .nav-bar ul{
     width: 100%;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    z-index: 5;
+    z-index: 2;
     
     
     
@@ -64,6 +65,7 @@ header{
 .contacto-item a{
     text-decoration: none;
     color: #fff;
+    
 }
 
 
@@ -88,86 +90,14 @@ header{
     box-shadow: 2px 2px 5px #02242c;
     transition: all .3s;
 }
-
-
-
-
-/* .texto-p{
-    width: 100%;
-    background-size: contain;
-    background-repeat: repeat;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.hamburger-icon,.close-icon{
+    display: none;
 }
-
-
-.texto-p h1 {
-    width: 100%;
-    color: transparent;
-    text-align: center;
-    font-size: 5rem;
-    margin: 100px 0 0 0;
-    letter-spacing: 17px;
-    font-family: 'Anton';
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 5px 5px 3px   black;
-    display: contents;
-
-    
-    
-    
-   
-}
-.texto-p h1::after{
-    content: 'TIENDA BERRETA';
-    background-image: url("../assets/cuadritos-n.jpeg");
-    background-size: contain;
-    background-position-y:center ;
-    -webkit-background-clip: text;
-    text-shadow: none;
-    position: absolute;
-    animation: texto 6s infinite ease;
-    
-    
-  
-
-}
-
-@keyframes texto {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.02);
-    }
-    
-   
-    100%{
-        transform: scale(1);
-    }
-    
-} */
-
-/* .inicio{
-    height: 100vh;
-    width: 100%;
-    background-repeat: round;
-    background-size: cover;
-    background-image: url("../assets/WhatsApp\ Image\ 2022-10-02\ at\ 7.25.04\ PM.jpeg");
-} */
 
 
 .titulo-p{
     position: relative;
-   
     left: -20px;
- 
-
-    
     opacity: 1;
 }
 .titulo-p img{
@@ -182,35 +112,28 @@ header{
 .img-sobre img{
     width: 100%;
 }
+
+
+
+.sobre-nosotros{
+    line-height: 40px;
+    width: 50%;
+    margin: 25px;
+    font-size: 2rem;
+}
+.sobre-nosotros h2{
+    font-size: 3.2rem;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
 /* Responsive */
 
 @media screen and (max-width:768px){
-    header{
-        height: auto;
-        position: relative;
-    }
-    .nav-bar{
-        height: auto;
-    }
-    .nav-bar ul{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .nav-items{
-        width: 100%;
-        text-align: center;
-        padding: 20px 0 20px 0;
-        
-    }
-    .contacto-item{
-        background-color: transparent;
-        
-    }
-    .contacto-item a{
-        color: #000;
-        font-size: 1.3rem;
-        font-family: 'Anton';
-    }
+
     
 }
+    
