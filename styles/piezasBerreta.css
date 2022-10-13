@@ -91,6 +91,10 @@ header{
     transition: all .3s;
 }
 
+.hamburger-icon,.close-icon{
+    display: none;
+}
+
 
 .texto-p{
     width: 100%;
@@ -109,7 +113,7 @@ header{
     text-align: center;
     font-size: 3.8rem;
     letter-spacing: 10px;
-    font-family: 'Anton';
+    font-family: "Nosifer Caps";
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 5px 5px 3px   black;
@@ -159,6 +163,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
+    background-color: transparent;
 }
 
 
@@ -167,32 +172,5 @@ h2 {
 /* Responsive */
 
 @media screen and (max-width:768px){
-    header{
-        height: auto;
-        position: relative;
-    }
-    .nav-bar{
-        height: auto;
-    }
-    .nav-bar ul{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .nav-items{
-        width: 100%;
-        text-align: center;
-        padding: 20px 0 20px 0;
-        border: solid 1px transparent;
-    }
-    .contacto-item{
-        background-color: transparent;
-        
-    }
-    .contacto-item a{
-        color: #000;
-        font-size: 1.3rem;
-        font-family: 'Anton';
-    }
-   
+    
 }
