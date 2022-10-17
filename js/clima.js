@@ -21,6 +21,7 @@ const fondoNubes = document.getElementById("video")
 const fondoClaro = document.getElementById("video2")
 const fondoLluvia = document.getElementById("video3")
 const fondoNieve = document.getElementById("video4")
+const fondoNiebla = document.getElementById("video5")
 
 
 
@@ -31,6 +32,7 @@ function actualizarFondo(data){
     fondoLluvia.style.visibility = "hidden"
     fondoNubes.style.visibility = "hidden"
     fondoClaro.style.visibility = "hidden"
+    fondoNiebla.style.visibility = "hidden"
     if(clima == "Clear"){
        
         fondoClaro.style.visibility = "visible"
@@ -44,6 +46,8 @@ function actualizarFondo(data){
     }else if(clima == "Snow"){
     
         fondoNieve.style.visibility = "visible"
+    }else if(clima == "Haze"){
+        fondoNiebla.style.visibility = "visible"
     }
     
 }
