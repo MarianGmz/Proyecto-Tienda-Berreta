@@ -1,6 +1,55 @@
+footer{
+    height: fit-content;
+    background-color: rgb(6, 4, 36);
+   
+    padding: 20px;
+    margin: 0;
+    color: aliceblue;
+    text-align: center;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.footer-items img{
+    width: 200px;
+}
+
+.redes-footer img{
+    width: 30px;
+    margin: 0 15px 0 15px;
+ 
+}
+.redes-footer{
+ 
+    display: flex;
+    align-items: center;
+    width: 250px;
+   
+}
+.info-footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    
+}
+.info-footer li{
+    margin: 10px 0 0 0 ;
+    list-style: circle;
+    color: aliceblue;
+}
+.info-footer li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+}
 
 /*RESPONSIVE DESIGN*/
-@media screen and (max-width:768px){
+@media screen and (max-width:858px){
     header{
         height: 80px;
         position: relative;
@@ -43,6 +92,14 @@
         align-items: center;
         
     }
+    .logo-item{
+        
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+   
     .nav-items{
         
         width: 100%;
@@ -65,9 +122,22 @@
    
     .logo-item img{
         
-        width: 200px;
+       
+        width: 100px;
+        height: 100px;
     }
     .open-nav{
         transform: translateX(0%);
     }
+
+    footer{
+       position: relative;
+        
+        height: fit-content;
+    }
+    .footer-items{
+        height: auto;
+        justify-content: center;
+    }
 }
+

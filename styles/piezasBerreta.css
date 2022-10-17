@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
 
 html,body,main{
-    height: 100vh;
+    height: auto;
 }
 body{
     background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
     background-size: cover;
+    height: auto;
+    background-repeat: repeat-y;
 }
 
 header{
@@ -13,6 +15,7 @@ header{
     margin: 0;
     position: sticky;
     top: 0px;
+    z-index: 5;
 }
 
 .nav-bar{
@@ -117,7 +120,8 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 5px 5px 3px   black;
-    display: contents;
+    display: flex;
+    justify-content: center;
 
     
     
@@ -133,6 +137,8 @@ header{
     text-shadow: none;
     position: absolute;
     animation: texto 6s infinite ease;
+    display: flex;
+    justify-content: center;
     
     
   
@@ -159,13 +165,56 @@ header{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: transparent;
+    position: relative;
+    height: auto;
 }
+    
 
+
+.catalogo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    padding: 10px;
+    margin: 0 0 10px 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.284);
+    
+}
+.catalogo div:hover{
+    background-color: rgba(0, 0, 0, 0.577);
+    color: #fff;
+    transition: all 1s;
+
+}
+.catalogo div:hover img{
+    transition: all 1s;
+    border-radius: 50%;
+}
+.catalogo div h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+.precio{
+    margin-top: 10px;
+    font-size: 1.5rem;
+
+}
 
 
 
 /* Responsive */
 
 @media screen and (max-width:768px){
-    
+    .catalogo div{
+        width: 70%;
+        height: 200px;
+        
+    }
+    .catalogo div img{
+        width: 100%;
+        
+    }
 }

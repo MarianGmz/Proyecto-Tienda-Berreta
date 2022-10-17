@@ -336,9 +336,11 @@ input::placeholder,textarea::placeholder{
         width: 100%;
     }
     form{
-        width: 80%;
+        width: 75%;
         margin: 0 10px 0 10px;
+        margin-bottom: 20px;
     }
+
     #nombres,#email{
         margin: 25px;
         width: 85%;

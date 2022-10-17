@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berreta</title>
+    <title>Berreta-Inicio</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Creepster+Caps" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     
 </head>
 
@@ -37,7 +39,43 @@
         </div>
 
         <div class="container-sobre">
-            <div class="sobre-nosotros">
+            <div class="app-clima" id="search-div">
+                <form id="search-form">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar ciudad.." autocomplete="off" class="search" id="searchbox">
+                        <p class="ejemplo">Ejemplo: New york,EU</p>
+                    </div>
+                </form>
+                <div class="alerta" id="alerta">
+                    <h3>Ciudad no encontrada</h3>
+                </div>
+                <div class="weather__card" id="weather__card">
+                    <video muted loop autoplay class="video" id="video">
+                        <source id="fondo-clima" src="./assets/clima/fondo-clima.mp4" type="video/mp4">
+                    
+                    </video>
+                    <video muted loop autoplay class="video2" id="video2">
+                        <source id="fondo-claro" src="./assets/clima/cielo-despejado.mp4" type="video/mp4">
+                    
+                    </video>
+                    <video muted loop autoplay class="video3" id="video3">
+                        <source id="fondo-claro" src="./assets/clima/lluvia.mp4" type="video/mp4">
+                    
+                    </video>
+                    <video muted loop autoplay class="video4" id="video4">
+                        <source id="fondo-claro" src="./assets/clima/nieve.mp4" type="video/mp4">
+                    
+                    </video>
+                    <div class="city" id="city"></div>
+                    <div class="date" id="date"></div>
+                    <div class="temperature" >
+                        <img id="temp-imagen" src="" alt="" width="50px">
+                        <div id="temp"></div>
+                    </div>
+                    <div class="weather" id="weather"></div>
+                    <div class="diff" id="diff"></div>
+                </div>
+
                 
 
             </div>
@@ -46,8 +84,28 @@
             </div>
         </div>
     </main>
-    <footer></footer>
-    <script src="menu.js"></script>
+    <footer>
+        <p> ©TiendaBerreta - Derechos reservados</p>
+        <div class="footer-items">
+            <img src="assets/berreta-png-efecto-3.png" alt="" width="100px">
+
+            <ul class="redes-footer">
+                <li><a href=""><img src="assets/footer/icons8-facebook-nuevo-80.png" alt=""></a></li>
+                <li><a href=""><img src="assets/footer/icons8-instagram-48.png" alt=""></a></li>
+                <li><a href=""><img src="assets/footer/icons8-gmail-48.png" alt=""></a></li>
+            </ul>
+
+            <ul class="info-footer">
+                <li><a href="nosotros.html">Mas sobre nosotros</a></li>
+                <li><a href="preguntasFrecuentes.html">preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+           
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/clima.js" defer></script>
 </body>
 
 </html>
