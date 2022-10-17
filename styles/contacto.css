@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&family=Anton&display=swap');
+
+body {
+    width: 100%;
+    background: transparent url('../assets/fondo.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-bar {
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(360deg, rgba(2, 0, 36, 0) 0%, transparent 30%, #fff 100%);
+
+}
+
+
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+
+
+
+}
+
+.nav-items {
+    overflow: hidden;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000000;
+
+    font-size: 1.3rem;
+    font-family: 'Anton';
+
+}
+
+.logo-item {
+    width: 200px;
+    height: 130px;
+}
+
+.logo-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto-item {
+    background-color: #02242c;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.contacto-item a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.nav-items::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    right: 120%;
+    background-color: #000;
+}
+
+.nav-items:hover::after {
+    right: 0%;
+    transition: right .5s;
+
+}
+
+.contacto-item:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px #02242c;
+    transition: all .3s;
+}
+.hamburger-icon,.close-icon{
+    display: none;
+}
+
+
+
+
+.texto-p {
+    width: 100%;
+    background: transparent;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.texto-p h1 {
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    font-size: 3.8rem;
+    letter-spacing: 10px;
+    font-family: "Nosifer Caps";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px black;
+    display: contents;
+    /* font-family: "Creepster Caps" */
+
+
+
+
+
+}
+
+.texto-p h1::after {
+    content: 'CONTACTO';
+    background-image: url('../assets/cuadritos_azules.jpg');
+    background-size: contain;
+    background-position-y: center;
+    -webkit-background-clip: text;
+    text-shadow: none;
+    position: absolute;
+    animation: texto 6s infinite ease;
+    font-family: "Nosifer Caps";
+
+
+
+
+}
+
+@keyframes texto {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.mapa {
+    width: 100%;
+    display: flex;
+
+}
+
+.mapa iframe {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.contenedor-info {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.info-local {
+    width: 50%;
+    text-align: center;
+}
+
+.info-local h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+}
+
+.info-contacto h3 {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgb(120, 106, 106);
+    margin-bottom: 15px;
+}
+
+.info-contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.whatsapp {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+.whatsapp:hover{
+    color: #65cde7;
+
+}
+
+
+.redes-info img {
+    width: 40px;
+    margin: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    height: 700px;
+    background-color: #00000036;
+
+  
+    padding: 30px;
+    border-radius: 10px ;
+}
+
+form>h2 {
+    text-align: start;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 0 0 30px 0;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+
+    margin: 25px;
+    outline: green;
+    border-bottom: 2px solid #0e0e0e;
+    border-radius: 7px;
+    padding: 3px;
+    transition: 0.4s;
+   
+    
+    background-color:#0707075b;
+    
+    font-size: 20px;
+
+}
+
+input {
+    height: 30px;
+
+}
+textarea, .asunto{
+    width: 85%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #02242c;
+}
+
+#nombres,
+#email {
+    margin: 0;
+    width: 40%;
+    display: inline;
+}
+
+#nombres {
+    margin: 0 40px 0 23px;
+}
+
+.checkbox {
+    width: 17px;
+    display: inline-block;
+    margin: 0;
+    height: 15px;
+}
+
+
+.enviar-form {
+
+.warnings{
+    width: 250px;
+    text-align: center;
+    margin: auto ;
+ 
+    
+    color: #ff0000;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    animation: warning 1s infinite ease;
+}
+
+
+
+
+    
+    
+  
+
+@keyframes warning {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    
+   
+    100%{
+        transform: scale(1);
+    }
+    
+}
+.enviar-form{
+
+    display: block;
+    margin: 35px auto;
+    width: 70%;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px 0;
+
+
+}
+
+.enviar-form:hover {
+    background-color: #12425c;
+    box-shadow: 2px 2px 2px grey;
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width:768px){
+   
+    .texto-p h1{
+        font-size: 2.1rem;
+    }
+   
+    
+    .formulario{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    form{
+        width: 75%;
+        margin: 0 10px 0 10px;
+
+        margin-bottom: 20px;
+    }
+
+    #nombres,#email{
+
+        margin: 25px;
+        width: 85%;
+        display: block;
+    }
+
+    .enviar-form{
+        font-size: .6rem;
+        width: 150px;
+        height: 50px;
+    }
+   
+}

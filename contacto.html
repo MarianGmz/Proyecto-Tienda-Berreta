@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Creepster+Caps" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        
+        <nav class="nav-bar">
+            <img src="/assets/close.png" alt="close icon" class="close-icon">
+            <ul>
+                <li class="logo-item"><img src="/assets/logo.png" alt=""></li>
+                <li class="nav-items"><a href="index.html">INICIO</a></li>
+                <li class="nav-items"><a href="piezasBerreta.html">PIEZAS BERRETA</a></li>
+                <li class="nav-items"><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="nav-items"><a href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a></li>
+                <li class="contacto-item "><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <img src="/assets/menu.png" alt="hamburger icon" class="hamburger-icon">
+    </header>
+    <main>
+        <div class="texto-p">
+            <h1>Contacto</h1>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d741.478553846783!2d-58.42001567946063!3d-34.5984182407126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1664464748398!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contenedor-info">
+            <div class="info-local">
+                <h2>Showroom</h2>
+                
+                <div class="info-contacto">
+                    <h3>DIRECCION</h3>
+                    <p>Bulnes 2587</p>
+                    <h3>WHATSAPP</h3>
+                    <p ><a class="whatsapp" href="https://wa.me/5493774504024" target="_blank">+54 9 3774 50-4024</a></p>
+                    <h3>EMAIL</h3>
+                    <p>tiendaberreta@outlook.com</p>
+                </div>
+                <div class="redes-info">
+                    <a href=""><img src="assets/facebook.png" alt=""></a>    
+                    <a href=""><img src="assets/instagram.png" alt=""></a>    
+                    <a href="mailto:tiendaberreta@outlook.com"><img src="assets/correo.png" alt=""></a>    
+                </div>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <form action="https://formsubmit.co/tiendaberreta@outlook.com" method="POST" id="form">
+                <h2>Escribinos 🙂 </h2>
+
+                <input type="text" name="nombre" id="nombres" placeholder="Nombre" ><span class="barra"></span>
+                <input type="text" name="email" id="email" placeholder="Email" ><span class="barra"></span>
+                <input type="text" placeholder="Asunto" name="asunto" class="asunto">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+                <label>
+                    <input class="checkbox" type="checkbox" name="" id="">
+                    ¡Suscribeme a la lista de correo!
+                </label>
+                <p class="warnings" id="warnings"></p>
+                <button type="submit" id="enviar" class="enviar-form"> ENVIAR MENSAJE</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html?">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+            </form>
+        </div>
+
+
+    </main>
+    <footer>
+        <p> ©TiendaBerreta - Derechos reservados</p>
+        <div class="footer-items">
+            <img src="assets/berreta-png-efecto-3.png" alt="" width="100px">
+
+            <ul class="redes-footer">
+                <li><a href=""><img src="assets/footer/icons8-facebook-nuevo-80.png" alt=""></a></li>
+                <li><a href=""><img src="assets/footer/icons8-instagram-48.png" alt=""></a></li>
+                <li><a href=""><img src="assets/footer/icons8-gmail-48.png" alt=""></a></li>
+            </ul>
+
+            <ul class="info-footer">
+                <li><a href="nosotros.html">Mas sobre nosotros</a></li>
+                <li><a href="preguntasFrecuentes.html">preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+           
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
