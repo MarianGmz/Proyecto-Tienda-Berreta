@@ -137,12 +137,19 @@ header{
     text-shadow: none;
     position: absolute;
     animation: texto 6s infinite ease;
+
     display: flex;
     justify-content: center;
     
+
     
   
 
+}
+
+h2 {
+    font-weight: bold;
+    text-align: justify;
 }
 
 @keyframes texto {
