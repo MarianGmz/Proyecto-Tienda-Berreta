@@ -20,7 +20,7 @@
 - [Overview](#overview)
 - [Built With](#built-with)
 - [Roles](#Roles)
-- [Contact](#contact)
+- [Info](#info)
 
 <!-- OVERVIEW -->
 
@@ -41,8 +41,8 @@
  
 ### Roles
 
-- 💻MARIANO(Developer - QA): Fue el líder técnico y se ocupó de programar, implementar la API y supervisar la calidad del código.
+- 🤖 MARIANO (Developer - QA): Fue el líder técnico y se ocupó de programar, implementar la API y supervisar la calidad del código.
 
-- CAMILA(Ux design): Se encargó de diseñar la estructura de la página web, el diseño y generar su contenido.
+- CAMILA (Ux design): Se encargó de diseñar la estructura de la página web, el diseño y generar su contenido.
 
-- JULIETA(Graphic design): Se encargo de realizar los logos,imagenes y ayudar en el diseño de la pagina.
+- 👾 JULIETA (Graphic design): Se encargo de realizar los logos,imagenes y ayudar en el diseño de la pagina.
