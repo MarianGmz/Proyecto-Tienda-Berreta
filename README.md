@@ -19,7 +19,7 @@
 
 - [Overview](#overview)
 - [Built With](#built-with)
-- [Participantes y Roles](#Participantes y Roles)
+- [Participantes y Roles](#Participantes-y-Roles)
 - [Info](#Info)
 
 <!-- OVERVIEW -->
@@ -33,7 +33,7 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML]([https://reactjs.org/](https://developer.mozilla.org/es/docs/Web/HTML))
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML))
 - [Css](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 - [API openweathermap](https://openweathermap.org/current)
@@ -43,7 +43,7 @@
 
 - 🤖 MARIANO (Developer - QA): Fue el líder técnico y se ocupó de programar, implementar la API y supervisar la calidad del código.
 
-- 🙂 CAMILA (Ux design): Se encargó de diseñar la estructura de la página web, el diseño y generar su contenido.
+- 🏄🏻‍♀️ CAMILA (Ux design): Se encargó de diseñar la estructura de la página web, el diseño y generar su contenido.
 
 - 👾 JULIETA (Graphic design): Se encargo de realizar los logos,imagenes y ayudar en el diseño de la pagina.
 
