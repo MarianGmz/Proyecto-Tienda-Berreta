@@ -1,9 +1,6 @@
 
 //array de la api para pasarle al momento de conectarse
-const api= {
-    key:"88d3c3af8b2c7c195c5fb90be7397862",
-    url:"https://api.openweathermap.org/data/2.5/weather"
-}
+
 
 
 //elementos a cambiar
